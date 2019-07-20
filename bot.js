@@ -12,6 +12,7 @@ client.on('guildMemberAdd', member => {
   const faqchannel = member.guild.channels.find(ch => ch.name === 'apex-faq').toString();
   if (!channel) return;
   channel.send(`:confetti_ball:  Welcome to the server : ${member}. You can drop your Tradingview :id:/Username in ${msgchannel} and don't forgot to read ${faqchannel}.`);
+  console.log('Added');
 });
 
 client.login(process.env.BOT_TOKEN);
