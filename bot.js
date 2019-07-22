@@ -11,7 +11,7 @@ client.on('guildMemberAdd', member => {
   const msgchannel = member.guild.channels.find(ch => ch.name === 'tradingview-id').toString();
   const faqchannel = member.guild.channels.find(ch => ch.name === 'apex-faq').toString();
   if (!channel) return;
-  channel.send(`:confetti_ball:  Welcome to the server : ${member}. You can drop your Tradingview :id:/Username in ${msgchannel} and don't forgot to read ${faqchannel}.`);
+  channel.send(`:confetti_ball:  Welcome to the server ${member}. You can drop your Tradingview :id:in ${msgchannel} to get access of ape[x] and don't forgot to read ${faqchannel}.`);
   console.log('Added');
 });
 
