@@ -17,8 +17,4 @@ client.on('guildMemberAdd', member => {
   console.log('Added');
 });
 
-:confetti_ball:  Welcome to the server ID. You can drop your Tradingview profile name in #tradingview-id to get access of ape[x],
-Please note the public trial period which had started on 1st of june expired on 31st july.
-Please wait till it reopens. Till then you can check out #apex-signals & #apex-faq
-
 client.login(process.env.BOT_TOKEN);
