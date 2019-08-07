@@ -11,9 +11,10 @@ client.on('guildMemberAdd', member => {
   const msgchannel = member.guild.channels.find(ch => ch.name === 'tradingview-id').toString();
   const faqchannel = member.guild.channels.find(ch => ch.name === 'apex-faq').toString();
   const signalch = member.guild.channels.find(ch => ch.name === 'apex-signals').toString();
+  const apxtrial = member.guild.channels.find(ch => ch.name === 'apex-trial').toString(); 
   
   if (!channel) return;
-  channel.send(`:confetti_ball:  Welcome to the server ${member}. You can drop your Tradingview profile name in ${msgchannel} to get access of ape[x]. Please note the public trial period which had started on 1st of june expired on 31st july. Please wait till it re-opens. Till then you can check out ${signalch} & ${faqchannel}.`);
+  channel.send(`:confetti_ball:  Welcome to the server ${member}. You can drop your Tradingview profile name in ${apxtrial} to get access of ape[x]. And do not forgot to check ${signalch} & ${faqchannel}.`);
   console.log('Added');
 });
 
